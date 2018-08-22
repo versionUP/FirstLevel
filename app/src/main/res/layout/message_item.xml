@@ -20,14 +20,14 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:drawableRight="@drawable/ic_action_delete_hs"/>
+            android:drawableRight="@drawable/actionn_delete"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="10dp"
-            android:drawableLeft="@drawable/ic_action_delete_hs"/>
+            android:drawableLeft="@drawable/actionn_delete"/>
 
     </RelativeLayout>
 
@@ -52,14 +52,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/ic_check_circle_gray_48px_new"
+                app:srcCompat="@drawable/ic_circlegray_new"
                 android:visibility="gone"/>
             <ImageView
                 android:id="@+id/iv_selected_state"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/ic_check_circle_black_48px"
+                app:srcCompat="@drawable/ic_circleblack_48px"
                 android:visibility="gone" />
 
         </RelativeLayout>

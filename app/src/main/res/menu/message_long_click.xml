@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/action_select_hs"
+    <item android:id="@+id/action_select"
         android:title="select alll"
-        android:icon="@drawable/ic_select_all_white_36px"
+        android:icon="@drawable/ic_selectallwhite"
         app:showAsAction="always" />
 
-    <item android:id="@+id/action_delete_hs"
+    <item android:id="@+id/action_delete"
         android:title="delete"
-        android:icon="@drawable/ic_delete_white_36px"
+        android:icon="@drawable/ic_deletewhite"
         app:showAsAction="always" />
 
 </menu>

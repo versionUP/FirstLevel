@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
         @Override
         public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
             switch (item.getItemId()){
-                case R.id.action_delete_hs:
+                case R.id.action_delete:
                     if (isMultiSelect || isSelectAll){
                         updateDeletedMessagesList();
                         MessagesHelper.markAsReadOrDeleted();
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
                         Toast.makeText(getApplicationContext(), mode.getTitle() + " Items Deleted !", Toast.LENGTH_SHORT).show();
                     }
                     return true;
-                case R.id.action_select_hs:
+                case R.id.action_select:
                     isSelectAll = true;
                     isMultiSelect = false;
                     updateHeaderForSelectAll();
