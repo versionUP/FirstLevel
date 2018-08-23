@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
                 }
 
                 if(isMultiSelect){
-                    enableActionMode();
+                    activateActionMode();
                     handleMessageClickEvent(position);
                 }
 
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
                     return;
                 }
                 if (!isMultiSelect) {
-                    enableActionMode();
+                    activateActionMode();
                     refreshAdapter();
                     handleListSelection(inbox_list, position);
                     isMultiSelect = true;
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
     private void handleMessageClickEvent(int position) {
         handleToggleForListSelection(inbox_list,position);
         updateHeaderForMultiSelect();
-        dismissActionMode();
+        deActivateActionMode();
     }
 
     public void handleListSelection(List<MOBInboxMessage> inbox_list, int position) {
@@ -229,7 +229,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
     }
 
 
-    public void enableActionMode() {
+    public void activateActionMode() {
         if (mActionMode == null) {
             mActionMode = startSupportActionMode(mActionModeCallBack);
             if (adapter != null) adapter.setActionModeEnabled(true);
@@ -237,7 +237,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
     }
 
 
-    private void dismissActionMode() {
+    private void deActivateActionMode() {
         if (selectedCount == 0 && mActionMode != null) {
             mActionMode.finish();
             if (adapter != null) adapter.setActionModeEnabled(false);
